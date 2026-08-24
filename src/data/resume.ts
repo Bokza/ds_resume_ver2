@@ -9,7 +9,7 @@ export const personal = {
   phone: '010-6426-9707',
   email: 'j_be_@naver.com',
   portfolio: 'https://ds-portfolio-white.vercel.app/',
-  careerDoc: 'https://ds-workexperience.vercel.app/',
+  careerDoc: 'https://ds-workexperience-ver2-seven.vercel.app/',
   intro: [
     '데이터를 분석하는 것에서 끝나는 것이 아니라, 실제 서비스에서 활용되어 고객과 비즈니스에 가치를 만들어내는 AI를 개발하는 데이터 사이언티스트입니다.',
     '문제를 정확하게 정의하고 가장 적합한 방법을 선택하여 실제 서비스의 성과로 연결하는 것이 데이터 사이언티스트의 역할이라고 생각합니다.',
