@@ -69,13 +69,54 @@ export function AboutMe() {
             <h4 className="hidden text-sm font-semibold text-slate-900 print:block dark:text-slate-100">
               {section.title}
             </h4>
-            <div className="mx-auto max-w-2xl space-y-4">
-              {section.paragraphs.map((paragraph, i) => (
-                <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
+
+            {section.id === 'intro' ? (
+              <div className="max-w-2xl space-y-4">
+                {section.paragraphs.map((paragraph, i) => (
+                  <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
+            ) : (
+              <div className="space-y-8">
+                <div>
+                  <h5 className="mb-4 text-sm font-semibold uppercase tracking-wide text-accent-600 dark:text-accent-400">
+                    장점
+                  </h5>
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    {section.strengths.map((item) => (
+                      <div key={item.label}>
+                        <h6 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
+                          {item.label}
+                        </h6>
+                        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                          {item.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div>
+                  <h5 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">
+                    단점
+                  </h5>
+                  <div className="grid gap-6 sm:grid-cols-2">
+                    {section.weaknesses.map((item) => (
+                      <div key={item.label}>
+                        <h6 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
+                          {item.label}
+                        </h6>
+                        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                          {item.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         ))}
       </div>
