@@ -62,18 +62,20 @@ export function AboutMe() {
           <div
             key={section.id}
             role="tabpanel"
-            className={`space-y-4 ${activeTab === section.id ? 'block' : 'hidden print:block'} ${
-              index > 0 ? 'print:mt-6 print:border-t print:border-slate-200 print:pt-6' : ''
-            }`}
+            className={`rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-950 sm:p-8 ${
+              activeTab === section.id ? 'block' : 'hidden print:block'
+            } ${index > 0 ? 'print:mt-6' : ''}`}
           >
             <h4 className="hidden text-sm font-semibold text-slate-900 print:block dark:text-slate-100">
               {section.title}
             </h4>
-            {section.paragraphs.map((paragraph, i) => (
-              <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
-                {paragraph}
-              </p>
-            ))}
+            <div className="mx-auto max-w-2xl space-y-4">
+              {section.paragraphs.map((paragraph, i) => (
+                <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
           </div>
         ))}
       </div>
