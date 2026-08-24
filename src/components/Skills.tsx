@@ -14,14 +14,23 @@ export function Skills() {
                 {category.title}
               </h3>
               <div className="flex flex-wrap gap-2">
-                {category.items.map((item) => (
-                  <span
-                    key={item}
-                    className="inline-block rounded-md bg-slate-100 px-2.5 py-1 text-sm font-medium text-slate-800 dark:bg-slate-800 dark:text-slate-200"
-                  >
-                    {item}
-                  </span>
-                ))}
+                {category.items.map((item, i) => {
+                  const tag = (value: string) => (
+                    <span
+                      key={value}
+                      className="inline-block rounded-md bg-slate-100 px-2.5 py-1 text-sm font-medium text-slate-800 dark:bg-slate-800 dark:text-slate-200"
+                    >
+                      {value}
+                    </span>
+                  );
+                  return Array.isArray(item) ? (
+                    <div key={i} className="flex gap-2">
+                      {item.map(tag)}
+                    </div>
+                  ) : (
+                    tag(item)
+                  );
+                })}
               </div>
             </div>
           ))}

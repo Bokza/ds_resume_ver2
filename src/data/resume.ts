@@ -69,7 +69,7 @@ export const careers: Career[] = [
   },
 ];
 
-export type SkillCategory = { title: string; items: string[] };
+export type SkillCategory = { title: string; items: (string | string[])[] };
 
 export const skillCategories: SkillCategory[] = [
   {
@@ -88,8 +88,7 @@ export const skillCategories: SkillCategory[] = [
       'Apache Airflow',
       'Docker',
       'AWS',
-      'EC2',
-      'ECS',
+      ['EC2', 'ECS'],
       'Apache Spark',
     ],
   },
