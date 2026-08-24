@@ -10,11 +10,6 @@ export const personal = {
   email: 'j_be_@naver.com',
   portfolio: 'https://ds-portfolio-white.vercel.app/',
   careerDoc: 'https://ds-workexperience-ver2-seven.vercel.app/',
-  intro: [
-    '데이터를 분석하는 것에서 끝나는 것이 아니라, 실제 서비스에서 활용되어 고객과 비즈니스에 가치를 만들어내는 AI를 개발하는 데이터 사이언티스트입니다.',
-    '문제를 정확하게 정의하고 가장 적합한 방법을 선택하여 실제 서비스의 성과로 연결하는 것이 데이터 사이언티스트의 역할이라고 생각합니다.',
-    '새로운 모델을 적용하는 것보다 문제를 이해하는 것이, 모델을 개발하는 것보다 운영 환경에서 지속적으로 개선하는 것이 더 큰 가치를 만든다고 믿으며, 기술이 실제 가치로 이어지는 AI 서비스를 만들기 위해 꾸준히 성장하고 있습니다.',
-  ],
 };
 
 export const education = {

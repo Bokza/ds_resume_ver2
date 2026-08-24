@@ -54,14 +54,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="mx-auto mt-14 max-w-5xl space-y-4 border-t border-slate-200 pt-10 dark:border-slate-800">
-        {personal.intro.map((paragraph, i) => (
-          <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
-            {paragraph}
-          </p>
-        ))}
-      </div>
     </section>
   );
 }
