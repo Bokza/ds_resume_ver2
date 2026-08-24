@@ -90,7 +90,7 @@ export function AboutMe() {
                         <h6 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
                           {item.label}
                         </h6>
-                        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400">
                           {item.text}
                         </p>
                       </div>
@@ -108,7 +108,7 @@ export function AboutMe() {
                         <h6 className="mb-2 font-semibold text-slate-900 dark:text-slate-100">
                           {item.label}
                         </h6>
-                        <p className="text-sm leading-relaxed text-slate-600 dark:text-slate-400">
+                        <p className="text-base leading-relaxed text-slate-600 dark:text-slate-400">
                           {item.text}
                         </p>
                       </div>
