@@ -48,6 +48,7 @@ export function Hero() {
                 className="rounded-full border border-slate-200 px-4 py-1.5 text-sm font-medium text-slate-700 transition hover:border-accent-300 hover:text-accent-700 dark:border-slate-700 dark:text-slate-300 dark:hover:border-accent-600 dark:hover:text-accent-400"
               >
                 {link.value}
+                {link.href.startsWith('http') && ' ↗'}
               </a>
             ))}
           </div>
