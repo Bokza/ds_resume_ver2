@@ -121,7 +121,7 @@ export const projects: Project[] = [
   {
     name: 'Occupancy Assumption Service',
     subtitle: '건물 재실 예측 서비스',
-    period: '2025',
+    period: '2024 ~ 2025',
     bullets: [
       'HMM · KMeans 이원화 알고리즘 설계',
       'BentoML 기반 REST API 개발 및 HVAC·조명 자동제어 연계',
@@ -141,7 +141,7 @@ export const projects: Project[] = [
   {
     name: 'DQN-based HVAC Control',
     subtitle: 'DQN 기반 건물 HVAC 자동 제어 시스템',
-    period: '2026',
+    period: '2025 ~ 2026',
     bullets: [
       '강화학습 환경 설계부터 온라인 학습 파이프라인 구축까지 단독 수행',
       '보상 함수 반복 개선을 통해 10개 이상 유닛 안정 제어 시스템 구축',
