@@ -71,7 +71,7 @@ export function AboutMe() {
             </h4>
 
             {section.id === 'intro' ? (
-              <div className="max-w-2xl space-y-4">
+              <div className="mx-auto max-w-2xl space-y-4">
                 {section.paragraphs.map((paragraph, i) => (
                   <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
                     {paragraph}
