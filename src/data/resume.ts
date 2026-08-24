@@ -78,7 +78,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: '데이터 처리',
-    items: ['Pandas', 'NumPy', 'SQL'],
+    items: ['Pandas', 'NumPy', 'SQL', 'SciPy'],
   },
   {
     title: 'MLOps & 인프라',
@@ -94,7 +94,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: '모니터링 & 협업',
-    items: ['Grafana', 'Prometheus', 'Git'],
+    items: ['Grafana', 'Prometheus', 'Git', 'Slack', 'Jira', 'Confluence'],
   },
 ];
 
