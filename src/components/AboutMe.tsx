@@ -11,7 +11,7 @@ export function AboutMe() {
       className="scroll-mt-20 bg-slate-50 px-5 py-16 dark:bg-slate-900/40 sm:px-8 sm:py-20"
     >
       <div className="mx-auto max-w-5xl">
-        <SectionHeading eyebrow="07" title="About Me" />
+        <SectionHeading eyebrow="06" title="About Me" />
 
         <div className="mb-14 rounded-2xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-950 sm:p-8">
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-slate-400 dark:text-slate-500">

@@ -1,7 +1,6 @@
 import { AboutMe } from "./components/AboutMe";
 import { Activities } from "./components/Activities";
 import { Career } from "./components/Career";
-import { CareerDetail } from "./components/CareerDetail";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
@@ -19,7 +18,6 @@ function App() {
         <Career />
         <Skills />
         <Projects />
-        <CareerDetail />
         <Activities />
         <AboutMe />
       </main>
