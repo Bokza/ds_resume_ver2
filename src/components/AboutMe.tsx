@@ -4,8 +4,6 @@ import { SectionHeading } from './SectionHeading';
 
 export function AboutMe() {
   const [activeTab, setActiveTab] = useState(aboutMeSections[0].id);
-  const activeSection =
-    aboutMeSections.find((s) => s.id === activeTab) ?? aboutMeSections[0];
 
   return (
     <section
@@ -37,7 +35,7 @@ export function AboutMe() {
         <div
           role="tablist"
           aria-label="About Me"
-          className="mb-8 flex gap-1 border-b border-slate-200 dark:border-slate-800"
+          className="mb-8 flex gap-1 border-b border-slate-200 print:hidden dark:border-slate-800"
         >
           {aboutMeSections.map((section) => (
             <button
@@ -60,16 +58,24 @@ export function AboutMe() {
           ))}
         </div>
 
-        <div role="tabpanel" className="space-y-4">
-          {activeSection.paragraphs.map((paragraph, i) => (
-            <p
-              key={i}
-              className=" leading-relaxed text-slate-600 dark:text-slate-400"
-            >
-              {paragraph}
-            </p>
-          ))}
-        </div>
+        {aboutMeSections.map((section, index) => (
+          <div
+            key={section.id}
+            role="tabpanel"
+            className={`space-y-4 ${activeTab === section.id ? 'block' : 'hidden print:block'} ${
+              index > 0 ? 'print:mt-6 print:border-t print:border-slate-200 print:pt-6' : ''
+            }`}
+          >
+            <h4 className="hidden text-sm font-semibold text-slate-900 print:block dark:text-slate-100">
+              {section.title}
+            </h4>
+            {section.paragraphs.map((paragraph, i) => (
+              <p key={i} className="leading-relaxed text-slate-600 dark:text-slate-400">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        ))}
       </div>
     </section>
   );

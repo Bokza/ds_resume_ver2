@@ -36,3 +36,19 @@ body {
   background-color: var(--color-accent-800);
   color: var(--color-accent-50);
 }
+
+@media print {
+  @page {
+    size: A4;
+  }
+
+  html {
+    color-scheme: light;
+  }
+
+  body {
+    background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

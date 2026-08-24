@@ -11,7 +11,7 @@ export function Activities() {
           {activities.map((activity) => (
             <div
               key={activity.name}
-              className="rounded-xl border border-slate-200 p-5 dark:border-slate-800"
+              className="rounded-xl border border-slate-200 p-5 print:break-inside-avoid dark:border-slate-800"
             >
               <div className="flex items-baseline justify-between gap-2">
                 <h3 className="font-bold text-slate-900 dark:text-slate-100">{activity.name}</h3>

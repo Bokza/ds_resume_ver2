@@ -11,7 +11,7 @@ export function Projects() {
           {projects.map((project) => (
             <article
               key={project.name}
-              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-accent-300 hover:shadow-sm dark:border-slate-800 dark:bg-slate-950 dark:hover:border-accent-700"
+              className="flex flex-col rounded-2xl border border-slate-200 bg-white p-6 transition hover:border-accent-300 hover:shadow-sm print:break-inside-avoid dark:border-slate-800 dark:bg-slate-950 dark:hover:border-accent-700"
             >
               <div className="flex items-baseline justify-between gap-2">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-slate-100">{project.name}</h3>
