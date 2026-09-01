@@ -8,7 +8,7 @@ export function AboutMe() {
   return (
     <section
       id="about"
-      className="scroll-mt-20 bg-slate-50 px-5 py-16 dark:bg-slate-900/40 sm:px-8 sm:py-20"
+      className="bg-slate-50 px-5 py-16 dark:bg-slate-900/40 sm:px-8 sm:py-20"
     >
       <div className="mx-auto max-w-5xl">
         <SectionHeading eyebrow="06" title="About Me" />

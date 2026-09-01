@@ -3,7 +3,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export function Activities() {
   return (
-    <section id="activities" className="scroll-mt-20 px-5 py-16 sm:px-8 sm:py-20">
+    <section id="activities" className="px-5 py-16 sm:px-8 sm:py-20">
       <div className="mx-auto max-w-5xl">
         <SectionHeading eyebrow="05" title="Activities" />
 

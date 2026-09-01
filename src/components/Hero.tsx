@@ -9,7 +9,7 @@ const contactLinks = [
 
 export function Hero() {
   return (
-    <section id="home" className="scroll-mt-20 px-5 pb-10 pt-14 sm:px-8 sm:pt-20">
+    <section id="home" className="px-5 pb-10 pt-14 sm:px-8 sm:pt-20">
       <div className="mx-auto flex max-w-5xl flex-col items-start gap-10 sm:flex-row sm:items-center sm:gap-14">
         <img
           src={profileImg}
